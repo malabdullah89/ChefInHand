@@ -14,7 +14,7 @@ class Section(models.Model):
 class Type(models.Model):
     type_english_name = models.CharField(max_length=200)
     type_arabic_name = models.CharField(max_length=200)
-    type_hindi_name = models.CharField(max_length=200)
+    type_hindi_name = models.CharField(max_length=200, default=None)
     created_by = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True, default=None)
 
     def __str__(self):
