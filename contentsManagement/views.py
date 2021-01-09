@@ -69,7 +69,7 @@ class AddTypes(TemplateView):  # Section Page
     template_name = 'add_type.html'
 
     def get(self, request):
-        types = Type.objects.filter(created_by_id=request.user)  # Sections List based on user logged in
+        types = Type.objects.all()
         form = AddType(request.POST)
         context = {'types': types, 'form': form}
         return render(request, self.template_name, context)

@@ -233,9 +233,13 @@ class AddType(forms.ModelForm):
     ))
 
     class Meta:
-        class Meta:
-            model = models.Type
-            exclude = ['created_by', ]
+        model = models.Type
+        fields = [
+            'type_english_name',
+            'type_arabic_name',
+            'type_hindi_name'
+
+        ]
 
 
 class AddIngredientForm(forms.ModelForm):
