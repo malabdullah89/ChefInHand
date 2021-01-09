@@ -224,11 +224,20 @@ class AddType(forms.ModelForm):
         }
     ))
 
+    type_hindi_name = forms.CharField(label='', widget=forms.TextInput(
+        attrs={
+            'class': 'form-control',
+            'placeholder': 'Type Arabic Name',
+
+        }
+    ))
+
     class Meta:
         model = models.Type
         fields = [
             'type_english_name',
             'type_arabic_name',
+            'type_hindi_name',
 
         ]
 
