@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>ChefInHand | Chosse Dashboard </title>
+    <link rel="icon" type="image/x-icon" href=""/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link href="{% static 'assets/css/pages/helpdesk.css' %}" rel="stylesheet" type="text/css"/>
+    <!--  END CUSTOM STYLE FILE  -->
+
+</head>
+<body class="alt-menu sidebar-noneoverflow">
+
+<div class="helpdesk container">
+    <nav class="navbar navbar-expand navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="pages_contact_us.html"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br class="helpdesk layout-spacing">
+
+    <div class="hd-header-wrapper">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h4 class="">ChefInHand</h4>
+
+
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-7 col-sm-11 col-11 mx-auto">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br></br>
+
+    <div class="container mt-5">
+        <h3>Choose Dashboard</h3>
+        <br></br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="/admin_dash" type="button" class="btn-lg btn-primary">Admin Dashboard</a>
+                </div>
+                <div class="col-sm">
+                    <a href="/chef_dash" type="button" class="btn-lg btn-danger">Chef Dashboard</a>
+                </div>
+                <div class="col-sm">
+                    <a href="/company_dash" type="button" class="btn-lg btn-warning">Company Dashboard</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <script src="{% static 'assets/js/libs/jquery-3.1.1.min.js' %}"></script>
+        <script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        <!-- END GLOBAL MANDATORY STYLES -->
+
+        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+        <script src="{% static 'assets/js/pages/helpdesk.js' %}"></script>
+        <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+</body>
+</html>
